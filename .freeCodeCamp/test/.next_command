@@ -69,3 +69,15 @@ chmod +x salon.sh
 ./salon.sh
 ./salon.sh
 ./salon.sh
+git init
+git commit -m "first commit"
+git add salon.sh
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/draxx3/salon_appointment.git
+git push -u origin main
+git remote remove origin
+git remote add origin https://github.com/draxx3/salon_appointment.git
+git push -u origin main
+pg_dump -U freecodecamp -d postgres -f salon.sql
+git add .
